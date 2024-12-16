@@ -1,23 +1,32 @@
 
 /* ADD @import statements ABOVE this line  */
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Mountains+of+Christmas:wght@400;700&display=swap');
 /*  ------------------------------------------------------
     BASIC PAGE STYLING
     Here you can set typography, colors and overall page styling
     ------------------------------------------------------ */
 html{
     font-size: 100%;
+    font-family: "Mountains of Christmas", serif;
 }
 body{
     /* Here you can set your default font-family, line-height 
         You can also use max-width and auto margins to limit the width of the page content
         If you set a background-color here it will be the site background color.
     */
+    background-color: #f5dcd7;
 
 }
+
 h1,h2,h3,h4,h5,h6{
     /* Here you can set the font-family for your headings */
+    text-align: center;
 
+}
+main{
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
 }
 
 /*  ------------------------------------------------------
@@ -34,8 +43,7 @@ a:hover{
     border-bottom: 3px solid #0fa4df;
 }
 a:visited{
-    color: #1313f1;
-    border-bottom: 1px solid #1313f1;
+    border-bottom: 1px solid #ff0000;
 }
 
 /*  ------------------------------------------------------
@@ -43,8 +51,19 @@ a:visited{
     This turns an unordered list in the nav element to a horizontal menu
     It also sets the color for the navigation.
     ------------------------------------------------------ */ 
-nav{
-    background-color: #fef6c6;
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+    nav{
+    background-color: #00642a;
     padding: 10px;
 }
     nav ul{
@@ -59,10 +78,10 @@ nav li
 }
 /* Change this to whatever color you want your nav and visited nav links to be */
 nav li a{
-    color: #1313f1;
+    color: #dffd32;
     border-bottom: none;
 }
-nav li a:visited{
+nav li a:{
     color: #1313f1;
     
 }
@@ -77,27 +96,86 @@ img,video{
     height: auto;
 }
 
-/* Styling for video embeded with iframe */
-.videoWrapper {
-    position: relative;
-    padding-top: 25px;
-    height: 0;
-    clear:both;
-    outline:1px solid red;
+
+  header{
+    text-align: center;
+    background-color: red;
+    font-family: "Mountains of Christmas", serif;
+    color: white;
   }
-  
-  .videoWrapper.ratio-16-9{
-      padding-bottom: 56.25%; /* 16:9 */
+
+  figcaption{
+    font-size: small ;
   }
-  
-  .videoWrapper.ratio-4-3{
-      padding-bottom: 75%; /* 4:3 */
+
+  .text{
+    font-size: xx-large;
+    text-align: center;
+    color: black;
   }
-  
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+  .donate{
+    text-align: center;
   }
+
+.Homepic{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.credit{
+    font-size: small;
+}
+
+.story{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.storya{
+    text-align: center;
+}
+
+.ABS{
+    font-size: x-large;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+
+.contact form {
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.caption{
+    text-align: left;
+}
+
+.button{
+    background-color: #f70a0a;
+    color: rgb(249, 255, 67); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 28px;
+}
+
+button:hover{
+    color: rgb(111, 0, 0);
+    border-bottom: 3px solid #007a29;
+}
