@@ -90,30 +90,6 @@ img,video{
     height: auto;
 }
 
-/* Styling for video embeded with iframe */
-.videoWrapper {
-    position: relative;
-    padding-top: 25px;
-    height: 0;
-    clear:both;
-    outline:1px solid red;
-  }
-  
-  .videoWrapper.ratio-16-9{
-      padding-bottom: 56.25%; /* 16:9 */
-  }
-  
-  .videoWrapper.ratio-4-3{
-      padding-bottom: 75%; /* 4:3 */
-  }
-  
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 
   header{
     text-align: center;
@@ -127,8 +103,9 @@ img,video{
   }
 
   .text{
-    font-size: large;
+    font-size: xx-large;
     text-align: center;
+    color: black;
   }
 
   .donate{
@@ -153,6 +130,10 @@ img,video{
     text-align: center;
 }
 
+.ABS{
+    font-size: x-large;
+}
+
 footer{
     position: fixed;
     bottom: 0px;
@@ -167,4 +148,26 @@ footer{
 
 .contact label {
     margin-top: 10px;
+    font-weight: bold;
+}
+
+.caption{
+    text-align: left;
+}
+
+.button{
+    background-color: #f70a0a;
+    color: rgb(249, 255, 67); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    font-size: 28px;
+}
+
+button:hover{
+    color: rgb(111, 0, 0);
+    border-bottom: 3px solid #007a29;
 }
